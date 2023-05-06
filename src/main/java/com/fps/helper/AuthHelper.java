@@ -14,9 +14,7 @@ public class AuthHelper {
 	public static CommonResponse formatCommonResponse(boolean validated) {
 		if (validated) {
 			System.out.println("statement test");
-			System.out.println("Test branch commit");
-			System.out.println("Test branch commit");
-			System.out.println("Directly edited from git");
+
 			return new CommonResponseBuilder().withStatus(OK).withMessage(SUCCESS_MSG).build();
 		}
 		return new CommonResponseBuilder().withStatus(NOT_FOUND).withMessage(USER_NOT_FOUND).build();
